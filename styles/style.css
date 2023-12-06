@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* main flex */
+.flex-container-main {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-item-left {
+    flex: 50%;
+    margin: 1.5rem 0;
+}
+
+.flex-item-right {
+    flex: 50%;
+    margin: 1.5rem 0;
+}
+
+/* nav main */
+.nav-title-container {
+    display: flex;
+    width: calc(50vw - 2rem);
+    margin: 0 1rem;
+    padding: 0;
+}
+
+.nav-item-left {
+    flex: 50%;
+    text-align: left;
+}
+
+.nav-item-right {
+    flex: 50%;
+    text-align: left;
+}
+
+.nav-title {
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+}
+
+.nav-selection {
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+}
+
+.nav-selection a {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-selection:last-child {
+    margin-top: 0.25rem;
+}
+
+/* research */
+.grid-container {
+    height: 100svh;
+    width: calc(50vw - 2rem);
+    margin: 0 1rem;
+    padding: 0%;
+}
+
+.grid-item {
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-end;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.link {
+    transition: 0.2s ease-in-out;
+}
+
+.link:hover {
+    color: #d3d3d3;
+    transition: 0.2s ease-in-out;
+}
+
+.text-item-header {
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.text-item {
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+/* information */
+#content {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: calc(100vh - 10%);
+    width: calc(50vw - 2rem);;
+    margin: 0 1rem;
+}
+
+#content h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#content p {
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+#content a {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.25rem;
+    color: #000;
+    text-decoration: none;
+}
